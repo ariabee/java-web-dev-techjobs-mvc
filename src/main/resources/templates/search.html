@@ -37,6 +37,7 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <h3 class="results-headline" th:if="${jobs != null}" th:text="'Search Results: ' + ${jobs.size()} + ' jobs found'"></h3>
     <table th:replace="fragments :: job-results-table"></table>
 
 </div>
