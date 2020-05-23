@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+
+<body class="container">
+    <h1>ooooh, naming a Thymeleaf template with dashes <i style="font-style:italic">seems</i> to require making the first dash into a '/' in the url...</h1>
+    <p>This Thymeleaf template is named "list-testing-slashes.html", but the pathname here is "list/testing-slashes"</p>
+    <p>In ListController (a class with root "/list" from @RequestMapping(value = "list")) we have:</p>
+    <pre>
+        <code>
+            @RequestMapping(value = "testing-slashes")
+            public String listTestingSlashes(Model model) {
+                return "list-testing-slashes";
+            }
+        </code>
+    </pre>
+</body>
+</html>

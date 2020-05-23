@@ -60,4 +60,9 @@ public class ListController {
 
         return "list-jobs";
     }
+
+    @RequestMapping(value = "testing-slashes")
+    public String listTestingSlashes(Model model) {
+        return "list-testing-slashes";
+    }
 }

@@ -1,5 +1,23 @@
+:root {
+    --color-green: #8cc084;
+    --color-teal: #549F93;
+    --color-blue: #47A8BD;
+    --color-purple: #805D93;
+    --color-blush: #ED6A5A;
+    --color-orange: #F39237;
+}
+
 .body-content {
     margin-top: 72px;
+}
+
+code {
+    line-height: 1.5;
+    overflow: scroll;
+}
+
+pre {
+    background: #9698971f;
 }
 
 td, th {
@@ -29,20 +47,23 @@ table.job-listing {
     width: 80%;
 }
 
-table.job-listing:nth-child(5n) tbody {
-    box-shadow: #549f93 0.5px 0.5px 8px 0px;
+table.job-listing:nth-child(6n) tbody {
+    box-shadow: var(--color-green) 0.5px 0.5px 8px 0px;
 }
-table.job-listing:nth-child(5n+1) tbody{
-    box-shadow: #47a8bd 0.5px 0.5px 8px 0px;
+table.job-listing:nth-child(6n+1) tbody{
+    box-shadow: var(--color-teal) 0.5px 0.5px 8px 0px;
 }
-table.job-listing:nth-child(5n+2) tbody {
-    box-shadow: #805D93 0.5px 0.5px 8px 0px;
+table.job-listing:nth-child(6n+2) tbody {
+    box-shadow: var(--color-blue) 0.5px 0.5px 8px 0px;
 }
-table.job-listing:nth-child(5n+3) tbody {
-    box-shadow: #f39237 0.5px 0.5px 8px 0px;
+table.job-listing:nth-child(6n+4) tbody {
+    box-shadow: var(--color-purple) 0.5px 0.5px 8px 0px;
 }
-table.job-listing:nth-child(5n+4) tbody {
-    box-shadow: #8cc084 0.5px 0.5px 8px 0px;
+table.job-listing:nth-child(6n+3) tbody {
+    box-shadow: var(--color-blush) 0.5px 0.5px 8px 0px;
+}
+table.job-listing:nth-child(6n+5) tbody {
+    box-shadow: var(--color-orange) 0.5px 0.5px 8px 0px;
 }
 
 table.job-listing td:first-child {
