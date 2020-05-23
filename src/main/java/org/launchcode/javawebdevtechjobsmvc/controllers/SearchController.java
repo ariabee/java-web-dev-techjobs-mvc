@@ -43,4 +43,9 @@ public class SearchController {
         return "search";
     }
 
+    @GetMapping(value = "results")
+    public String redirectReloadedResultsToSearchPage(Model model) {
+        return "redirect:";
+    }
+
 }
