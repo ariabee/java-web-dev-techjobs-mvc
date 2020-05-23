@@ -13,6 +13,7 @@
 
 <body>
 
+    <!-- Page Header -->
     <div th:fragment="page-header" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -27,6 +28,17 @@
         </div>
     </div>
 
+    <!-- Action Choices Navigation -->
+    <div th:fragment="action-choices-nav" class="container body-content">
+        <h2>View jobs by:</h2>
+        <ul>
+            <li th:each="action : ${actions}">
+                <a th:href="@{'/' + ${action.key}}" th:text="${action.value}"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Job Results Table -->
     <table th:fragment="job-results-table" th:each = "job : ${jobs}" class="job-listing">
         <tr>
             <th>ID</th>
