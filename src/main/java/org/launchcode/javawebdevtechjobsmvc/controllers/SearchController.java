@@ -32,7 +32,7 @@ public class SearchController {
         if (searchTerm.trim().toLowerCase().equals("all") || searchTerm.equals("")) {
             jobs = JobData.findAll();
         } else {
-            jobs = JobData.findByColumnAndValue(searchType, searchTerm);
+            jobs = JobData.findByColumnAndValue(searchType, searchTerm.trim());
         }
 
         model.addAttribute("title", "Jobs with " + searchType + ": " + searchTerm );
