@@ -39,7 +39,7 @@ public class TechJobsController {
      *  -  'columnChoices.put...' to take place inside 'public TechJobsController()' constructor
      *  -  'model.addAttribute("columns", columnChoices);' in every controller method
      *          to be replaced with
-     *     '@ModelAttribute("columns") ... { return columnChoices; }' in one method here
+     *     '@ ModelAttribute("columns") ... { return columnChoices; }' in one method here
      */
     @ModelAttribute("columns")
     public static HashMap<String, String> getColumnChoices() {
